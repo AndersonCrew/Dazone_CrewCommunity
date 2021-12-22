@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/colorAccent"
+    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/main_toolbar_edt_search"
+            style="@style/Base.Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="100dp"
+            android:gravity="left|center_vertical"
+            android:hint="Type search text here"
+            android:lines="1"
+            android:textColorHint="@color/drawer_devide_color"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="100dp"
+            android:ellipsize="marquee"
+            android:gravity="left|center_vertical"
+            android:lines="1"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:src="@mipmap/ic_launcher"
+            android:tint="@android:color/white"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ic_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:src="@drawable/ic_menu_white_24dp" />
+
+        <TextView
+            android:id="@+id/option_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:foreground="@drawable/ripple_effect"
+            android:padding="@dimen/margin_normal"
+            android:text="NEXT"
+            android:textAllCaps="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imv_option_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:src="@drawable/ic_magnify_white_24dp" />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

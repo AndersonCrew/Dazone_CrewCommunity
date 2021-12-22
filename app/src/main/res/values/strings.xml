@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">CrewBoard</string>
+    <string name="app_name_screen">Crew\nCommunity</string>
+    <!-- LoginV2Activity -->
+    <string name="loginActivity_copyright">CopyRight © 2015 DaZone Tech., INC.</string>
+    <string name="loginActivity_signUp">로그인</string>
+    <string name="loginActivity_forgotPassword">비밀번호 찾기</string>
+    <string name="loginActivity_help">도움말</string>
+    <string name="loginActivity_slash"> / </string>
+    <string name="loginActivity_haveNoId"> 회원가입 </string>
+    <string name="loginActivity_logIn">Login</string>
+    <string name="loginActivity_password">Password</string>
+    <string name="loginActivity_userName">Personal ID</string>
+    <string name="loginActivity_organizationID">Group(Company) ID</string>
+
+    <string name="loginActivity_message_organizationId">단체 아이디를 입력해주세요.</string>
+    <string name="loginActivity_message_userName">개인 아이디를 입력해주세요.</string>
+    <string name="loginActivity_message_password">비밀번호를 입력해주세요.</string>
+    <string name="loginActivity_message_wrong_server_site">서버에 접속할 수 없습니다.</string>
+
+    <!-- MainActivity -->
+    <string name="mainActivity_message_exit">\'뒤로\' 버튼을 한번 더 누르시면 종료됩니다.</string>
+    <string name="loading_title">loading&#8230;</string>
+    <string name="loading_content">Please wait.</string>
+    <string name="string_ok">OK</string>
+    <string name="no_connection_error">No Internet Connection</string>
+    <string name="no_wifi_error">Please turn on wifi to continue</string>
+    <string name="string_cancel">Cancel</string>
+    <string name="turn_wifi_on">Turn wifi on</string>
+    <string name="string_update_content">Please update the newest version!</string>
+    <string name="mailActivity_message_download_apk">설치 파일을 다운로드 중입니다.\n잠시만 기다려주세요.</string>
+
+    <!-- Login activity -->
+    <string name="login_button">Login In</string>
+    <string name="sign_up_suggest">Haven\'t you your Group(Company) ID yet?</string>
+    <string name="string_sign_up">Create a new Group(Company)</string>
+    <string name="login_password">Password</string>
+    <string name="login_username">Personal ID</string>
+    <string name="string_server_site">Group(Company) ID</string>
+    <string name="login_login">Log In</string>
+    <string name="no_network_error">Can Not Connect To Server</string>
+    <string name="title_sign_up_screen">Create a new Group(Company)</string>
+    <!-- Sign Up screen -->
+    <string name="enter_your_email">Mail address</string>
+    <string name="register">Send</string>
+    <string name="sign_up_note">Enter your mail address.</string>
+    <string name="sign_up_note2">We will send a link to create a new group(company) on CrewCloud.</string>
+    <string name="would_you_like_to_download_it">Would you like to download it?</string>
+
+    <!-- AUTO LOGIN -->
+    <string name="auto_login_button_yes">Yes</string>
+    <string name="auto_login_button_no">No</string>
+    <string name="auto_login_company_ID">Group ID&#160;&#160;&#160;&#160;&#160;&#160;:&#160;</string>
+    <string name="auto_login_user_ID">Personal ID&#160;:&#160;</string>
+    <string name="auto_login_title">Auto Login</string>
+    <string name="auto_login_text">You have already logged in to CrewCloud service.​ Would you log in as the above account?​</string>
+    <string name="connection_falsed">Can not connect the above address </string>
+    <string name="login_empty_input">cannot be empty</string>
+    <string name="set_permissions">Set Permissions</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="are_you_sure_loguot" >Are you sure you want to logout?</string>
+    <string name="comunity">Community</string>
+
+    <string name="phone">Phone Number</string>
+    <string name="profle">Profile</string>
+    <string name="can_not_blank_title">Can not blank Title</string>
+    <string name="list_view">ListView</string>
+    <string name="today">today</string>
+    <string name="choose_group">Choose Group</string>
+    <string name="detail">Detail</string>
+    <string name="no_data">No Data</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="enter_content">Enter Content</string>
+    <string name="select_group">Select Group</string>
+    <string name="alarm">Alarm</string>
+    <string name="welcome_to_crewcommunity">Welcome to CrewCommunity</string>
+    <string name="click_to_add_new_community">Click to add new Community</string>
+    <string name="string_company_id">Company ID</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="please_select_a_board">Please select a board</string>
+    <string name="max_photo_size">max photo size</string>
+    <string name="logout">Logout</string>
+    <string name="about_crewcommunity">About CrewCommunity</string>
+    <string name="setting">Setting</string>
+    <string name="user_version">User Version</string>
+    <string name="lastest_version">Latest Version</string>
+    <string name="confirm">Confirm</string>
+    <string name="fileselect" translatable="false">Select File</string>
+    <string name="general_settings">General settings</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="notification_method">Notification Method</string>
+    <string name="notification_time">Notification Time</string>
+
+    <string name="getnotify">Get Notify of new mail</string>
+    <string name="noti_method">Notification Method</string>
+    <string name="sound">Sound</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="about">About </string>
+    <string name="string_cant_get_token">Can\'t get device token</string>
+    <string name="label_about">About CrewBoard</string>
+    <string name="notification_time_note">*Only receive notification on this time</string>
+    <string name="notification_time_long">Notification Time</string>
+
+    <!-- PROFILE -->
+    <string name="profile_label_name">Name</string>
+    <string name="profile_label_sex">Sex</string>
+    <string name="profile_label_phone_number">Phone Number</string>
+    <string name="profile_label_company_number">Company Number</string>
+    <string name="profile_label_extension_number">Extension Number</string>
+    <string name="profile_label_entrance_date">Entrance Date</string>
+    <string name="profile_label_birthday">Birthday</string>
+    <string name="profile_label_belong">Belong To Department</string>
+    <string name="profile_label_password">Password</string>
+    <string name="profile_btn_change_password">Change</string>
+    <!-- Profile page -->
+    <string name="personal_id">Persional ID</string>
+    <string name="email">Email</string>
+    <string name="company_name">Company Name</string>
+    <string name="profile_label_day_of_employment">Day of Employment</string>
+    <!-- CHANGE PASSWORD -->
+    <string name="change_password_hint_old_password">Old Password</string>
+    <string name="change_password_hint_new_password">New Password</string>
+    <string name="change_password_hint_confirm_password">Confirm Password</string>
+    <string name="change_password_button_change_password">Change Password</string>
+    <string name="label_activity_change_password">Change Password</string>
+</resources>

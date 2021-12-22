@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/dialogContent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/dialog_info_tv_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_effect_transparent"
+            android:padding="@dimen/margin_normal"
+            android:textColor="@android:color/black"
+            android:text="Delete" />
+
+        <TextView
+            android:id="@+id/dialog_info_tv_edit"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_info_tv_delete"
+            android:background="@drawable/ripple_effect_transparent"
+            android:padding="@dimen/margin_normal"
+            android:text="Edit" />
+
+        <TextView
+            android:id="@+id/dialog_info_tv_copy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_info_tv_edit"
+            android:background="@drawable/ripple_effect_transparent"
+            android:padding="@dimen/margin_normal"
+            android:textColor="@android:color/black"
+            android:text="Copy" />
+
+        <TextView
+            android:id="@+id/dialog_info_tv_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_info_tv_copy"
+            android:background="@drawable/ripple_effect_transparent"
+            android:padding="@dimen/margin_normal"
+            android:textColor="@android:color/black"
+            android:text="Reply" />
+    </RelativeLayout>
+
+</FrameLayout>
+

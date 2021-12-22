@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ln_content"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/default_padding_small"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/item_view_user_iv_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:id="@+id/item_view_user_rl_check"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_trans_blue">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:alpha="10"
+                    android:src="@drawable/list_check_choose_ic" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ln_info"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/rl_avatar"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.crewcloud.apps.crewboard.widget.AutoSizeTextView
+                android:id="@+id/item_view_user_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/default_text_size_bigger" />
+
+            <com.crewcloud.apps.crewboard.widget.AutoSizeTextView
+                android:id="@+id/item_view_user_tv_position"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/default_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_view_user_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/default_padding_bigger"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/default_text_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray" />
+
+</RelativeLayout>

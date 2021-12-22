@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frbackground"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avatar_imv"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="9dp"
+                    android:src="@mipmap/photo_placeholder" />
+
+                <!--<com.dazone.crewschedule.CustomView.FaceOverlayViewForSizeOther-->
+                <!--android:id="@+id/avatar_imv"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_gravity="center" />-->
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="name" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_add_new_schedule_height"
+            android:layout_marginTop="5dp"
+            android:background="@color/divider_add_new_schedule_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_big">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_id" />
+
+            <TextView
+                android:id="@+id/tv_personal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_add_new_schedule_height"
+            android:background="@color/divider_add_new_schedule_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_big">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_add_new_schedule_height"
+            android:background="@color/divider_add_new_schedule_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_big">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/company_name" />
+
+            <TextView
+                android:id="@+id/tv_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_add_new_schedule_height"
+            android:background="@color/divider_add_new_schedule_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_add_new_schedule_height"
+                android:layout_marginTop="5dp"
+                android:background="@color/divider_add_new_schedule_color" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

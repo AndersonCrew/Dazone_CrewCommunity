@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/gray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@color/white"
+        android:padding="@dimen/margin_normal">
+
+        <ImageView
+            android:id="@+id/item_list_community_iv_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/photo_placeholder"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/item_list_community_tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_toRightOf="@+id/item_list_community_iv_image"
+            android:textSize="17sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/item_list_community_tv_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_toRightOf="@+id/item_list_community_iv_image"
+            android:orientation="horizontal">
+
+            <com.crewcloud.apps.crewboard.widget.AutoSizeTextView
+                android:id="@+id/item_list_community_tv_author"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/item_list_community_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

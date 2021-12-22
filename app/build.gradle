@@ -1,0 +1,129 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.25.4'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+    mavenCentral()
+}
+
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.crewcloud.apps.crewboard"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1300
+        versionName "1.4.5"
+        multiDexEnabled true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath false
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    signingConfigs {
+        one {
+            storeFile file("DazoneKeyStore.jks")
+            storePassword 'tranquoctrung'
+            keyAlias 'dazone'
+            keyPassword 'tranquoctrung'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.one
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "boolean", "ENABLE_DEBUG", "false"
+
+        }
+        debug {
+            signingConfig signingConfigs.one
+            buildConfigField "boolean", "ENABLE_DEBUG", "true"
+
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-messaging:12.0.0'
+    implementation 'com.google.firebase:firebase-core:12.0.0'
+    implementation 'com.google.firebase:firebase-auth:12.0.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.8.3'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
+    implementation 'com.google.android.gms:play-services-maps:12.0.0'
+    //networking
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.0.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.7.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    //annotation, parsing
+    implementation 'com.google.dagger:dagger:2.4'
+    annotationProcessor "com.google.dagger:dagger-compiler:2.4"
+    implementation 'com.jakewharton:butterknife:7.0.1'
+    //===
+
+    //database
+    implementation 'com.uphyca:stetho_realm:0.9.0'
+    //database
+    implementation 'io.realm:android-adapters:1.3.0'
+    implementation 'com.facebook.stetho:stetho:1.4.2'
+    implementation 'com.coolerfall:android-http-download-manager:1.6.1'
+    implementation 'com.nispok:snackbar:2.11.0'
+    //react
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'io.reactivex:rxjava:1.1.6'
+    implementation 'com.facebook.stetho:stetho:1.4.2'
+    implementation 'com.facebook.rebound:rebound:0.3.8'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.github.AndroidDeveloperLB:AutoFitTextView:4'
+    implementation 'at.blogc:expandabletextview:1.0.3'
+    implementation 'com.nononsenseapps:filepicker:4.0.0'
+    implementation 'com.thoughtbot:expandablerecyclerview:1.3'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.6.6@aar') {
+        transitive = true
+    }
+    //notification
+    implementation 'me.leolin:ShortcutBadger:1.1.19@aar'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+
+apply plugin: 'com.google.gms.google-services'

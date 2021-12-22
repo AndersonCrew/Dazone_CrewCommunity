@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/default_padding">
+
+            <EditText
+                android:id="@+id/fragment_add_community_et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/enter_title"
+
+                android:ems="10" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/default_padding">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_format_list_bulleted_grey600_24dp"
+                android:tint="@color/colorPrimary" />
+
+
+            <TextView
+                android:id="@+id/fragment_add_community_tv_job"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_effect_transparent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/default_text_size_big"
+                android:textColor="@android:color/black"
+                android:text="@string/select_group" />
+
+            <ImageView
+                android:id="@+id/fragment_add_community_iv_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_chevron_down_grey600_24dp"
+                android:tint="@color/divider_add_new_schedule_color" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/default_padding">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/add_btn_alarm"
+                android:tint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/alarm"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/default_text_size_bigger" />
+
+            <Switch
+                android:id="@+id/switch_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_add_community_lv_attach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/white"
+            android:padding="@dimen/default_padding">
+
+            <EditText
+                android:id="@+id/fragment_add_community_et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/enter_content" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

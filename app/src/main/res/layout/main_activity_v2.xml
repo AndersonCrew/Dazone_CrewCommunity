@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.crewcloud.apps.crewboard.widget.HackyDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include layout="@layout/layout_content" />
+
+    <include
+        layout="@layout/left_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left" />
+</com.crewcloud.apps.crewboard.widget.HackyDrawerLayout>

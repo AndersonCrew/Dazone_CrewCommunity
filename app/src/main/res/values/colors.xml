@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="myColor_Primary">#4391dd</color>
+    <color name="myColor_PrimaryDark">#277bcd</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="colorPrimary">#4391dd</color>
+    <color name="colorPrimaryDark">#277bcd</color>
+    <color name="colorAccent">#267BCC</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="disable_text_color">#8e8e8e</color>
+    <color name="secondary_text_color">#76000000</color>
+    <color name="app_base_color">#4391dd</color>
+    <!--<color name="login_button_login_background">#37a3e4</color>-->
+    <color name="login_button_login_background">#3f95e9</color>
+    <!--<color name="login_button_signup_background">#277bcd</color>-->
+    <color name="login_button_signup_background">#3374b3</color>
+    <color name="drawer_devide_color">#909796</color>
+    <color name="gray_light">#DFDFDF</color>
+    <color name="title">#4391dc</color>
+    <color name="blue">#0067b4</color>
+    <color name="blue_dark">#005391</color>
+    <color name="divider_color">#b5b5b5</color>
+    <color name="gray">#e8e8e8</color>
+    <color name="gray_50_trans">#50DFDFDF</color>
+    <color name="list_user_activated_color">#d4e9fd</color>
+    <color name="gray_compose_mail">#888888</color>
+    <color name="text_gray">#868686</color>
+    <color name="blue_trans_color">#85277bcd</color>
+    <color name="bg_text_comment">#e7f3ff</color>
+    <color name="divider_add_new_schedule_color">#b8b8b8</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="share_border_color">#c4c4c4</color>
+    <color name="app_background_color">#4282bf</color>
+</resources>

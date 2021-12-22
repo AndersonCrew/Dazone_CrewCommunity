@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:fillViewport="false"
+    android:scrollbarStyle="insideOverlay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_normal">
+
+            <TextView
+                android:id="@+id/fragment_community_detail_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/default_text_size" />
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_normal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fragment_community_iv_avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/fragment_community_detail_tv_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_toRightOf="@+id/fragment_community_iv_avatar"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/default_text_size" />
+
+            <TextView
+                android:id="@+id/fragment_community_detail_tv_time_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_community_detail_tv_author"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_toRightOf="@+id/fragment_community_iv_avatar"
+                android:textSize="@dimen/default_text_smaller" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_community_detail_lv_attach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+            <!--Content-->
+            <WebView
+                android:id="@+id/fragment_community_detail_tv_des"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/margin_normal"
+                android:background="@android:color/transparent"
+                android:minHeight="350dp" />
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

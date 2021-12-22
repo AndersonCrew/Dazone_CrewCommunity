@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/fragment_change_pass_et_old_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/current_password"
+        android:padding="@dimen/default_padding_big"
+        android:textSize="@dimen/default_text_size_big" />
+
+    <EditText
+        android:id="@+id/fragment_change_pass_et_new_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/new_password"
+        android:padding="@dimen/default_padding_big"
+        android:textSize="@dimen/default_text_size_big" />
+
+    <EditText
+        android:id="@+id/fragment_change_pass_et_confirm_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_password"
+        android:padding="@dimen/default_padding_big"
+        android:textSize="@dimen/default_text_size_big" />
+
+    <Button
+        android:id="@+id/fragment_change_pass_btn_change_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_padding"
+        android:background="@drawable/bg_btn_change_pass"
+        android:text="@string/change_password"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/default_text_size_big" />
+
+</LinearLayout>

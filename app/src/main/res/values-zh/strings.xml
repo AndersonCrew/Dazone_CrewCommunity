@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">船员社区</string>
+    <string name="app_name_screen">船员社区</string>
+
+    <!-- LoginV2Activity -->
+    <string name="loginActivity_copyright">CopyRight © 2015 DaZone Tech., INC.</string>
+    <string name="loginActivity_signUp">登入</string>
+    <string name="loginActivity_forgotPassword">找回密码</string>
+    <string name="loginActivity_help">帮忙</string>
+    <string name="loginActivity_slash"> / </string>
+    <string name="loginActivity_haveNoId">成为会员</string>
+    <string name="loginActivity_logIn">登入</string>
+    <string name="loginActivity_password">密码</string>
+    <string name="loginActivity_userName">编号</string>
+    <string name="loginActivity_organizationID">组号</string>
+
+    <string name="loginActivity_message_organizationId">请输入您的组ID.</string>
+    <string name="loginActivity_message_userName">请输入您的个人ID.</string>
+    <string name="loginActivity_message_password">请输入密码.</string>
+    <string name="loginActivity_message_wrong_server_site">无法连接到服务器.</string>
+
+    <!-- MainActivity -->
+    <string name="mainActivity_message_exit">\'回去\'再按一次退出.</string>
+    <string name="loading_title">loading&#8230;</string>
+    <string name="loading_content">请稍等.</string>
+    <string name="string_ok">OK</string>
+    <string name="no_connection_error">没有互联网连接</string>
+    <string name="no_wifi_error">请开启wifi以继续</string>
+    <string name="string_cancel">取消</string>
+    <string name="turn_wifi_on">开启wifi</string>
+    <string name="mailActivity_message_download_apk">下载安装文件.\n请稍等.</string>
+    <string name="string_update_content">有一个新版本。 您要安装吗？</string>
+    <string name="would_you_like_to_download_it">您要下载附件吗？</string>
+    <!-- Login activity -->
+    <string name="login_button">船运</string>
+    <string name="sign_up_suggest">还没有公司ID？</string>
+    <string name="string_sign_up">建立新的组织</string>
+    <string name="login_password">密码</string>
+    <string name="login_username">个人身份证</string>
+    <string name="string_server_site">组（公司）ID</string>
+    <string name="login_login">登入</string>
+    <string name="no_network_error">无法连接到服务器.</string>
+    <string name="title_sign_up_screen">创建组（公司）</string>
+    <!-- Sign Up screen -->
+    <string name="enter_your_email">邮件地址</string>
+    <string name="register">建立新群组</string>
+    <string name="sign_up_note">请输入您的电子邮件地址.</string>
+    <string name="sign_up_note2">我们将在您输入的电子邮件地址上发送指向Crewcloud的链接以创建组（公司）。</string>
+
+
+    <!-- AUTO LOGIN -->
+    <string name="auto_login_button_yes">是的</string>
+    <string name="auto_login_button_no">没有啦</string>
+    <string name="auto_login_company_ID">组号 :&#160;</string>
+    <string name="auto_login_user_ID">个人身份证:&#160;</string>
+    <string name="auto_login_title">自动登录</string>
+    <string name="auto_login_text">您已经登录到crewcloud服务。您要使用上述帐户登录吗？</string>
+
+    <string name="connection_falsed">无法连接以上地址</string>
+    <string name="login_empty_input">不能为空</string>
+    <string name="set_permissions">设置权限</string>
+    <string name="permission_denied">权限被拒绝</string>
+    <string name="are_you_sure_loguot">您要登出吗？</string>
+    <string name="comunity">社区活动</string>
+
+    <string name="personal_id">用户名</string>
+    <string name="email">电邮地址</string>
+    <string name="company_name">机构名称</string>
+    <string name="phone">电话号码</string>
+    <string name="profle">我的资料</string>
+    <string name="can_not_blank_title">请输入主题</string>
+    <string name="list_view">查询清单</string>
+    <string name="today">"今天"</string>
+    <string name="choose_group">选择组</string>
+    <string name="detail">查看内容</string>
+    <string name="no_data">没有资料</string>
+    <string name="enter_title">输入标题</string>
+    <string name="enter_content">输入内容</string>
+    <string name="select_group">请选择一个组</string>
+    <string name="alarm">公告公告</string>
+    <string name="welcome_to_crewcommunity">欢迎来到船员社区.</string>
+    <string name="click_to_add_new_community">开始新的发布</string>
+    <string name="string_company_id">公司编号</string>
+    <string name="current_password">当前密码</string>
+    <string name="new_password">新密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="change_password">修改密码</string>
+    <string name="please_select_a_board">请选择一块木板</string>
+    <string name="max_photo_size">最大照片尺寸</string>
+    <string name="logout">登出</string>
+    <string name="about_crewcommunity">关于船员社区</string>
+    <string name="user_version">用户版本</string>
+    <string name="lastest_version">最新版本</string>
+    <string name="confirm">好啦</string>
+    <string name="setting">设置</string>
+    <string name="general_settings">一般设定</string>
+    <string name="notification_settings">通知设定</string>
+    <string name="notification_method">通知类型</string>
+    <string name="notification_time">通知时间</string>
+
+    <string name="getnotify">电邮通知</string>
+    <string name="noti_method">通知类型</string>
+    <string name="sound">铃声</string>
+    <string name="vibrate">震动</string>
+    <string name="about">资讯中心</string>
+    <string name="string_cant_get_token">无法获取设备令牌</string>
+    <string name="label_about">船员社区</string>
+    <string name="notification_time_note">"* 您只能在设定的时间接收通知. "</string>
+    <string name="notification_time_long">"使用提醒时间"</string>
+
+    <!-- PROFILE -->
+    <string name="profile_label_name">名称</string>
+
+    <string name="profile_label_sex">性爱</string>
+
+    <string name="profile_label_phone_number">手机</string>
+
+    <string name="profile_label_company_number">公司联系方式</string>
+
+    <string name="profile_label_extension_number">分机号码</string>
+
+    <string name="profile_label_entrance_date">参加日期</string>
+
+    <string name="profile_label_birthday">생일</string>
+
+    <string name="profile_label_belong">所属部门</string>
+    <string name="profile_label_password">修改密码</string>
+    <string name="profile_btn_change_password">改变</string>
+    <string name="profile_label_day_of_employment">参加日期</string>
+
+    <!-- CHANGE PASSWORD -->
+    <string name="change_password_hint_old_password">当前密码</string>
+    <string name="change_password_hint_new_password">新密码</string>
+    <string name="change_password_hint_confirm_password">确认密码</string>
+    <string name="change_password_button_change_password">修改密码</string>
+    <string name="label_activity_change_password">修改密码</string>
+</resources>

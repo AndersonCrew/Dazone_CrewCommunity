@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/dialogContent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_dialog_edit_comment"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/dialog_effect_tv_effect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_effect_transparent"
+            android:padding="@dimen/margin_normal"
+            android:text="Title Effect"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/item_effect_tv_name_effect_none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding_big"
+            android:text="None"
+            android:textColor="@android:color/black" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+
+        <TextView
+            android:id="@+id/item_effect_tv_name_over_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding_big"
+            android:text="1. Overline"
+            android:textColor="@android:color/black" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+
+        <TextView
+            android:id="@+id/item_effect_tv_name_line_through"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding_big"
+            android:text="2. Line Through"
+            android:textColor="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+
+        <TextView
+            android:id="@+id/item_effect_tv_name_effect_underline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding_big"
+            android:text="3.Underline"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+</FrameLayout>
+

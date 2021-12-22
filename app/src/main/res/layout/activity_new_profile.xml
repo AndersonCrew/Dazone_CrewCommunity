@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/activity_new_profile_iv_avatar"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/activity_new_profile_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_new_profile_iv_avatar"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/activity_new_profile_tv_depart_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_new_profile_tv_name"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/layout_view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10_20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/company_name"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/activity_new_profile_tv_company_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10_20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/string_company_id"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/activity_new_profile_tv_company_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10_20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/personal_id"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/activity_new_profile_tv_persion_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_view_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10_20">
+
+            <TextView
+                android:id="@+id/activity_new_profile_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/login_password"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/activity_new_profile_tv_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_new_profile_pass"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/change_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:background="@drawable/bg_change_pass"
+                android:padding="@dimen/dimen_8_16"
+                android:text="Change"
+                android:textColor="@color/colorPrimary" />
+        </RelativeLayout>
+
+        <include layout="@layout/layout_view_line" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10_20">
+
+            <TextView
+                android:id="@+id/activity_new_profile_email"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/email"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/activity_new_profile_tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_new_profile_email"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/sent_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_mail_white_24dp"
+                android:tint="@color/colorPrimary" />
+        </RelativeLayout>
+
+        <include layout="@layout/layout_view_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10_20">
+
+            <TextView
+                android:id="@+id/activity_new_profile_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/phone"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/activity_new_profile_tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_new_profile_phone"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_mail_white_24dp"
+                android:tint="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/activity_new_profile_iv_call_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_10_20"
+                android:layout_toLeftOf="@id/message"
+                android:src="@drawable/ic_phone_white_24dp"
+                android:tint="@color/colorPrimary" />
+        </RelativeLayout>
+
+        <include layout="@layout/layout_view_line" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+

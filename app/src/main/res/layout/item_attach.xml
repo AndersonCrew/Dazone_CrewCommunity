@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_padding_smaller"
+        android:layout_marginLeft="@dimen/default_padding"
+        android:layout_marginRight="@dimen/default_padding"
+        android:layout_marginTop="@dimen/default_padding_tiny"
+        android:background="@drawable/bg_troke_gray"
+        android:padding="@dimen/default_padding_smaller">
+
+        <ImageView
+            android:id="@+id/item_attach_iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/detail_download_attach_ic" />
+
+        <TextView
+            android:id="@+id/item_attach_tv_name_attach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_toRightOf="@+id/item_attach_iv_icon"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/default_text_small" />
+
+        <TextView
+            android:id="@+id/item_attach_tv_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/item_attach_tv_name_attach"
+            android:layout_alignBottom="@+id/item_attach_tv_name_attach"
+
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/item_attach_tv_name_attach"
+            android:layout_toRightOf="@+id/item_attach_tv_name_attach"
+            android:textSize="@dimen/default_text_small" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_attach_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/search_ic_clear"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

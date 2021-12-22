@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ln_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_big">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="@dimen/setting_page_icon"
+            android:layout_height="@dimen/setting_page_icon"
+            android:layout_marginLeft="@dimen/dimen_10_20"
+            android:src="@drawable/avatar_l" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:text="@string/profle"
+            android:textSize="@dimen/default_text_size_bigger" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light" />
+
+    <LinearLayout
+        android:id="@+id/ln_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_big"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="@dimen/setting_page_icon_under"
+            android:layout_height="@dimen/setting_page_icon_under"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_10_20"
+            android:background="@drawable/bg_circle_blue_more_page">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_info_outline_white_18dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_infor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_10_20"
+            android:background="?android:attr/selectableItemBackground"
+            android:textSize="@dimen/default_text_size_bigger"
+            android:text="@string/about_crewcommunity" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light" />
+
+    <LinearLayout
+        android:id="@+id/ln_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_big">
+
+
+        <com.crewcloud.apps.crewboard.widget.RoundedLayoutCircle
+            android:id="@+id/rcl_logout"
+            android:layout_width="@dimen/setting_page_icon_under"
+            android:layout_height="@dimen/setting_page_icon_under"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/setting_mgleft"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_logout_white_24dp" />
+        </com.crewcloud.apps.crewboard.widget.RoundedLayoutCircle>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_10_20"
+            android:layout_toRightOf="@+id/rcl_logout"
+            android:text="@string/logout"
+            android:textSize="@dimen/default_text_size_bigger" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light" />
+
+</LinearLayout>

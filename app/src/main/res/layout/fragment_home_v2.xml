@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fragment_home_v2_rl_no_data"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/fragment_home_v2_iv_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/fragment_home_v2_tv_wellcome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/default_padding_tiny"
+            android:src="@drawable/loading_ic_community"
+            android:tint="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/fragment_home_v2_tv_wellcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/welcome_to_crewcommunity"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/default_text_size_bigger" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="65dp"
+            android:layout_marginRight="60dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/default_padding_tiny">
+
+            <com.crewcloud.apps.crewboard.widget.AutoSizeTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/click_to_add_new_community"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/default_text_size_bigger" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/tab_intro_arrow" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.crewcloud.apps.crewboard.widget.MyRecyclerView
+        android:id="@+id/fragment_home_list_community"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
