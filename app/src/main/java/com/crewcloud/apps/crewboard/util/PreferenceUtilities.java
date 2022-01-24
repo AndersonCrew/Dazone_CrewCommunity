@@ -138,11 +138,11 @@ public class PreferenceUtilities {
     }
 
     public void setCompanyName(String companyName) {
-        mPreferences.edit().putString(COMPANY_NAME, companyName).apply();
+        mPreferences.edit().putString(Constants.COMPANY_NAME, companyName).apply();
     }
 
     public String getCompanyName() {
-        return mPreferences.getString(COMPANY_NAME, "");
+        return mPreferences.getString(Constants.COMPANY_NAME, "");
     }
 
     public int getCurrentUserNo() {
